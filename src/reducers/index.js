@@ -12,6 +12,7 @@ import AnthonyMore from '../assets/judy-get-down.mp3';
 import ELO from '../assets/the-whale.mp3';
 import PeterHammill from '../assets/accidents.mp3';
 import DenisWize from '../assets/andro.mp3';
+import Ditto from '../assets/rock.mp3';
 
 
 
@@ -29,9 +30,10 @@ const songsReducer = () => {
     { artist: 'Anthony More', title: 'Judy Get Down', duration: '4:05', mp3: AnthonyMore, year: '1979', album: "Flying Doesn't Help", img: 'https://img.discogs.com/PJqsSj6-NO_S1w_vSbm0oU1saO8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-625854-1409746827-5601.jpeg.jpg'},
     { artist: 'Electric Light Orchestra', title: 'The Whale', duration: '4:05', mp3: ELO, year: '1977', album: "Out of the Blue", img: 'https://img.discogs.com/k-Hxg-9_DbHelalxxampl1-naqE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-342681-1356796270-8952.jpeg.jpg'},
     { artist: 'Peter Hammill', title: 'Accidents', duration: '4:05', mp3: PeterHammill, year: '1982', album: "Enter K", img: 'https://img.discogs.com/mfmn3HBX9sM2K2w1XWAID3aEo9E=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1374902-1466619986-1514.jpeg.jpg'},
-    { artist: 'Denis Wize', title: 'Andro', duration: '4:05', mp3: DenisWize, year: '2018', album: "Wize Music", img: 'https://img.discogs.com/M0tBCGgeHauJpFNBs2T0sLcWmS8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12923557-1544618140-7192.jpeg.jpg'}
-  ];
-};
+    { artist: 'Denis Wize', title: 'Andro', duration: '4:05', mp3: DenisWize, year: '2018', album: "Wize Music", img: 'https://img.discogs.com/M0tBCGgeHauJpFNBs2T0sLcWmS8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12923557-1544618140-7192.jpeg.jpg'},
+    { artist: 'Charles Ditto', title: 'Rock', duration: '4:05', mp3: Ditto, year: '1987', album: "In Human Terms", img: 'https://img.discogs.com/FVH4YwRIhoFjy_k8AzbGxp3pzsk=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1248194-1545224722-9314.jpeg.jpg'}
+    ];
+  };
 
 const selectedSongReducer = (selectedNewSong = null, action) => {
   if (action.type === 'SONG_SELECTED') {

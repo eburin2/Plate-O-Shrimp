@@ -7,7 +7,7 @@ const App = () => {
   return (
       <div className="ui container grid">
         <header className="flex">
-          <h1 className="font">PLATE-O-SHRIMP: SONGS THAT WILL BREAK YOUR SPIRIT'S HYMEN</h1>
+          <h1 className="font">PLATE-O-SHRIMP</h1>
         </header>
         <div className="ui row">
           <div className="column eight wide">
