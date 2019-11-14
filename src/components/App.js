@@ -1,0 +1,24 @@
+import React from 'react';
+import SongList from './SongList';
+import './App.css';
+import Shrimp from './Shrimp';
+
+const App = () => {
+  return (
+      <div className="ui container grid">
+        <header className="flex">
+          <h1 className="font">PLATE-O-SHRIMP: SONGS THAT WILL BREAK YOUR SPIRIT'S HYMEN</h1>
+        </header>
+        <div className="ui row">
+          <div className="column eight wide">
+            <SongList />
+          </div>
+          <div className="column eight wide">
+            <Shrimp />
+          </div>
+        </div>
+      </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  flex-direction: 'center';
+  padding-top: 20px;
+}
+
+.font {
+  font-family: 'futura';
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+header {
+  width: 100vw;
+  border: 3px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}
