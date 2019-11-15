@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './SongList.css';
-import { selectedNewSong } from '../actions';
+import { selectedSong } from '../actions';
 
 const getRandom = (arr, n) => {
     let result = new Array(n),
@@ -16,7 +16,6 @@ const getRandom = (arr, n) => {
     }
     return result;
 }
-
 
 class SongList extends React.Component {
   renderList() {
@@ -34,15 +33,15 @@ class SongList extends React.Component {
             <img className='album-img' alt={song.title} src={song.img} />
           </div>
           <audio autoPlay>
-            <source src={song.mp3} type="audio/mp4" />
+            <source src={song.mp3} type="audio/mp3" />
           </audio>
           <div className="center floated content">
             <button
               id="select"
               className="ui button primary select"
-              onClick={(() => this.props.selectedNewSong(song))}
+              onClick={() => this.props.selectedSong(song)}
               >
-              Next Song
+              Play a Random Song
             </button>
           </div>
         </div>
@@ -50,7 +49,7 @@ class SongList extends React.Component {
     });
   }
   render() {
-    return <div className="ui divided list">{this.renderList()}</div>
+    return <div className="ui list">{this.renderList()}</div>
   }
 }
 
@@ -60,5 +59,5 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps,
   //passing in action creator to the connect function
-  { selectedNewSong }
+  { selectedSong }
 )(SongList);

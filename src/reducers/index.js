@@ -13,6 +13,8 @@ import ELO from '../assets/the-whale.mp3';
 import PeterHammill from '../assets/accidents.mp3';
 import DenisWize from '../assets/andro.mp3';
 import Ditto from '../assets/rock.mp3';
+import RancidPoultry from '../assets/the-smoking-crack.mp3';
+
 
 
 
@@ -31,19 +33,20 @@ const songsReducer = () => {
     { artist: 'Electric Light Orchestra', title: 'The Whale', duration: '4:05', mp3: ELO, year: '1977', album: "Out of the Blue", img: 'https://img.discogs.com/k-Hxg-9_DbHelalxxampl1-naqE=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-342681-1356796270-8952.jpeg.jpg'},
     { artist: 'Peter Hammill', title: 'Accidents', duration: '4:05', mp3: PeterHammill, year: '1982', album: "Enter K", img: 'https://img.discogs.com/mfmn3HBX9sM2K2w1XWAID3aEo9E=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1374902-1466619986-1514.jpeg.jpg'},
     { artist: 'Denis Wize', title: 'Andro', duration: '4:05', mp3: DenisWize, year: '2018', album: "Wize Music", img: 'https://img.discogs.com/M0tBCGgeHauJpFNBs2T0sLcWmS8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12923557-1544618140-7192.jpeg.jpg'},
-    { artist: 'Charles Ditto', title: 'Rock', duration: '4:05', mp3: Ditto, year: '1987', album: "In Human Terms", img: 'https://img.discogs.com/FVH4YwRIhoFjy_k8AzbGxp3pzsk=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1248194-1545224722-9314.jpeg.jpg'}
+    { artist: 'Charles Ditto', title: 'Rock', duration: '4:05', mp3: Ditto, year: '1987', album: "In Human Terms", img: 'https://img.discogs.com/FVH4YwRIhoFjy_k8AzbGxp3pzsk=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1248194-1545224722-9314.jpeg.jpg'},
+    { artist: 'Rancid Poultry', title: 'The Smoking Crack', duration: '4:05', mp3: RancidPoultry, year: '1990', album: "Hello There! I'm a Balloon Rabbit", img: 'https://img.discogs.com/88n_s-y_w3xqyaFCTVskjs0AZLk=/fit-in/376x579/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3499876-1492062241-7238.jpeg.jpg'}
     ];
   };
 
-const selectedSongReducer = (selectedNewSong = null, action) => {
+const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === 'SONG_SELECTED') {
     return action.payload;
   }
 
-  return selectedNewSong;
+  return selectedSong;
 };
 
 export default combineReducers({
   songs: songsReducer,
-  selectedNewSong: selectedSongReducer
+  selectedSong: selectedSongReducer
 });

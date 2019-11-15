@@ -3,6 +3,7 @@ import SongList from './SongList';
 import './App.css';
 import Shrimp from './Shrimp';
 
+
 const App = () => {
   return (
       <div className="ui container grid">
@@ -14,7 +15,7 @@ const App = () => {
             <SongList />
           </div>
           <div className="column eight wide">
-            <Shrimp />
+            <Shrimp />s
           </div>
         </div>
       </div>
