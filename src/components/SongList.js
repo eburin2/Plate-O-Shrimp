@@ -17,6 +17,7 @@ const getRandom = (arr, n) => {
     return result;
 }
 
+
 class SongList extends React.Component {
   renderList() {
     const songs = getRandom(this.props.songs, 1);
@@ -24,13 +25,13 @@ class SongList extends React.Component {
       return(
         <div id="top" className="item" key={song.title}>
           <div className="content">
-            <h2>Artist: {song.artist}</h2>
-            <h2 className='content-padding'>Song: {song.title}</h2>
-            <h2 className='content-padding'>Album: {song.album}</h2>
-            <h2 className='content-padding'>Year: {song.year}</h2>
+            <h2><span className="bold">Artist:</span><span className="content-style">{song.artist}</span></h2>
+            <h2><span className="bold">Song:</span><span className='content-style'>{song.title}</span></h2>
+            <h2><span className="bold">Album:</span><span className='content-style'>{song.album}</span></h2>
+            <h2><span className="bold">Year:</span><span className="content-style">{song.year}</span></h2>
           </div>
           <div>
-            <img className='album-img' alt={song.title} src={song.img} />
+            <img className='album-img content-style' alt={song.title} src={song.img} />
           </div>
           <audio autoPlay>
             <source src={song.mp3} type="audio/mp3" />
@@ -41,7 +42,7 @@ class SongList extends React.Component {
               className="ui button primary select"
               onClick={() => this.props.selectedSong(song)}
               >
-              Play a Random Song
+              Next Song
             </button>
           </div>
         </div>

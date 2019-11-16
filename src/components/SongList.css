@@ -4,15 +4,26 @@
 
 #select {
   margin-top: 20px;
+  margin-left: 20px;
 }
 
-.content-padding {
+.content-style {
   padding-bottom: 10px;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 500;
+  margin-left: 20px;
+  font-weight: 600;
 }
 
 .album-img {
   min-width: 300px;
+  max-width: 400px;
   width: 50%;
   height: 50%;
   margin-top: 20px;
+  margin-left: 20px;
 }

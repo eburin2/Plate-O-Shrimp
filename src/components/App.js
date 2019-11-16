@@ -15,7 +15,7 @@ const App = () => {
             <SongList />
           </div>
           <div className="column eight wide">
-            <Shrimp />s
+            <Shrimp />
           </div>
         </div>
       </div>
