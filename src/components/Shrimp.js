@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './Shrimp.css';
 
-const shrimp = () => {
+const shrimp = ({ song }) => {
   return(
-     <div>
-      <h1 id="title">SHRIMP</h1>
-     </div>
+      <div>
+         <h1>Shrimp</h1>
+      </div>
   );
 }
 

@@ -34,7 +34,7 @@ class SongList extends React.Component {
             <img className='album-img content-style' alt={song.title} src={song.img} />
           </div>
           <audio autoPlay>
-            <source src={song.mp3} type="audio/mp3" />
+            <source src={song.mp3} type="audio/mp3"/>
           </audio>
           <div className="center floated content">
             <button
